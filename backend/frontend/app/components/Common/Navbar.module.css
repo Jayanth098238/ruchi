@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+:global(.dark) .navbar {
+  background-color: #000000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0070f3;
+  transition: color 0.3s ease;
+}
+
+:global(.dark) .logo {
+  color: #60a5fa;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navLinks a {
+  font-weight: 500;
+  color: #555;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+:global(.dark) .navLinks a {
+  color: #d1d5db;
+}
+
+.navLinks a:hover {
+  color: #0070f3;
+}
+
+:global(.dark) .navLinks a:hover {
+  color: #60a5fa;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #e5e7eb;
+  transition: border-color 0.3s ease;
+}
+
+:global(.dark) .userSection {
+  border-left-color: #4b5563;
+}
+
+.profileLink {
+  font-weight: 500;
+  color: #374151;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+:global(.dark) .profileLink {
+  color: #d1d5db;
+}
+
+.profileLink:hover {
+  color: #0070f3;
+}
+
+:global(.dark) .profileLink:hover {
+  color: #60a5fa;
+}
+
+.logoutBtn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+:global(.dark) .logoutBtn {
+  background-color: #dc2626;
+}
+
+.logoutBtn:hover {
+  background-color: #dc2626;
+}
+
+:global(.dark) .logoutBtn:hover {
+  background-color: #b91c1c;
+}
