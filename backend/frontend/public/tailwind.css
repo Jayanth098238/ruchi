@@ -1,0 +1,48 @@
+/* Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility classes */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Basic styling for the application */
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+h1 {
+  @apply text-2xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-semibold;
+}
+
+button {
+  @apply px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700;
+}
+
+input, textarea, select {
+  @apply p-2 border border-gray-300 rounded;
+}
+
+.card {
+  @apply bg-white p-4 rounded shadow;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
